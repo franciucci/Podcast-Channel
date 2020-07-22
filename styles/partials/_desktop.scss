@@ -1,0 +1,23 @@
+/* Este partial contiene los estilos para la versión desktop */
+@import "variables";
+
+/* Navbar horizontal */
+@media (min-width: 48em) {
+  .navbar .navlist {
+    clear: none;
+    float: right;
+    margin-right: 80px;
+    max-height: none;
+    background-color: white;
+    .navlinks {
+      float: left;
+      a {
+        padding: 20px 30px;
+        color: $text_color;
+      }
+    }
+  }
+  .navbar .menu-icon {
+    display: none;
+  }
+}

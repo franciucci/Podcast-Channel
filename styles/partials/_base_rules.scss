@@ -1,0 +1,29 @@
+/* Este partial contiene los estilos generales que se van a utilizar a lo largo de toda la página */
+@import "variables";
+
+/* Estilo aplicable a toda la página */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+/* Estilo del título del main header */
+h1 {
+  font-family: $title_font;
+  font-size: $maintitle_size;
+  color: $text_color;
+}
+/* Estilo de los títulos de las diferentes secciones */
+h2 {
+  font-family: $title_font;
+  font-size: $titles_size;
+  color: $text_color;
+}
+/* Estilo del texto general */
+body {
+  font-family: $text_font;
+  color: $text_color;
+  font-size: $text_size;
+}

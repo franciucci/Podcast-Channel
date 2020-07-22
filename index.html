@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Podcast Channel</title>
+    <link rel="stylesheet" href="styles/styles.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <a href="#main"
+          ><img src="images/logo.svg" alt="podcast logo" class="logo"
+        /></a>
+        <!-- Esto es un checkbox para crear el menú hamburguesa -->
+        <input type="checkbox" class="menu-btn" id="menu-btn" />
+        <!-- Este label es para poder mostrar el menú al hacer clic sobre el icono del menu hamburguesa -->
+        <label for="menu-btn" class="menu-icon"
+          ><span class="nav-icon"></span
+        ></label>
+        <ul class="navlist">
+          <li class="navlinks"><a href="#episodes">EPISODIOS</a></li>
+          <li class="navlinks"><a href="#us">NOSOTROS</a></li>
+          <li class="navlinks"><a href="#interviews">ENTREVISTAS</a></li>
+          <li class="navlinks"><a href="#topics">TÓPICOS</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- AQUI COMIENZA EL CONTENIDO PRINCIPAL -->
+    <a href="" id="main"></a>
+    <main class="main">
+      <section class="main-header">
+        <h1>Hello <span class="world">world</span> pale blue dot.</h1>
+        <p>
+          Un podcast que explora el mundo de la programación. Nuevos episodios,
+          todos los jueves cada 15 días.
+        </p>
+        <button class="conoce-mas">CONOCÉ MÁS</button>
+      </section>
+      <!-- SECTION EPISODES -->
+      <a href="" id="episodes"></a>
+      <section class="episodes">
+        <h2>Episodios</h2>
+        <iframe
+          src="https://open.spotify.com/embed-podcast/episode/7AZZy2nJ4R9ZndHW0h2yxt"
+          width="100%"
+          height="232"
+          frameborder="0"
+          allowtransparency="true"
+          allow="encrypted-media"
+        ></iframe>
+        <iframe
+          src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt"
+          width="100%"
+          height="232"
+          frameborder="0"
+          allowtransparency="true"
+          allow="encrypted-media"
+        ></iframe>
+        <iframe
+          src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD"
+          width="100%"
+          height="232"
+          frameborder="0"
+          allowtransparency="true"
+          allow="encrypted-media"
+        ></iframe>
+        <iframe
+          src="https://open.spotify.com/embed-podcast/episode/31VyAQAwBiKoHVoYUCEzjQ"
+          width="100%"
+          height="232"
+          frameborder="0"
+          allowtransparency="true"
+          allow="encrypted-media"
+        ></iframe>
+        <div>
+          <img src="images/phone.png" alt="phone-image" />
+        </div>
+      </section>
+      <!-- SECTION HISTORY -->
+      <a href="" id="us"></a>
+      <section class="history">
+        <h2>De Dónde venimos</h2>
+        <p>
+          Our posturings, our imagined self-importance, the delusion that we
+          have some privileged position in the Universe, are challenged by this
+          point of pale light.
+        </p>
+        <p>
+          Our planet is a lonely speck in the great enveloping cosmic dark. In
+          our obscurity, in all this vastness, there is no hint that help will
+          come from elsewhere to save us from ourselves.
+        </p>
+      </section>
+      <!-- SECTION IMAGES GALERY -->
+      <a href="" id="interviews"></a>
+      <section class="galery">
+        <h2>Invitadas/os estelares</h2>
+        <div class="image-galery">
+          <img src="images/grace-hopper.png" alt="photo of grace hooper" />
+        </div>
+        <div class="image-galery">
+          <img src="images/Katie-Bouman.png" alt="photo of katie bouman" />
+        </div>
+        <div class="image-galery">
+          <img
+            src="images/Margaret_Hamilton.png"
+            alt="photo of margaret hamilton"
+          />
+        </div>
+        <div class="image-galery">
+          <img
+            src="images/An E.R.A.Univac 1103 computer in the 1950s.png"
+            alt="photo of an ERA Univac 1103 computer in the '50s'"
+          />
+        </div>
+        <div class="image-galery">
+          <img
+            src="images/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png"
+            alt="photo of computer operators with an Eniac, the world’s first programmable general purpose computer"
+          />
+        </div>
+        <div class="image-galery">
+          <img src="images/susan-kare.png" alt="photo of susan kare" />
+        </div>
+      </section>
+      <!-- SECTION TOPICS -->
+      <a href="" id="topics"></a>
+      <section class="other">
+        <h2>Algunos de nuestros temas</h2>
+        <img src="images/icon1.svg" alt="remote work icon" />
+        <p>Trabajo remoto</p>
+        <img src="images/icon2.svg" alt="brain icon" />
+        <p>Repensando la programación</p>
+        <img src="images/icon3.svg" alt="computer icon" />
+        <p>Bases del código</p>
+        <img src="images/icon4.svg" alt="computer science icon" />
+        <p>Seguridad informática</p>
+      </section>
+      <!-- SECTION NEWS -->
+      <section class="news">
+        <h2>¿Querés las últimas novedades?</h2>
+        <button>ESCUCHÁ LOS EPISODIOS</button>
+      </section>
+    </main>
+    <!-- AQUI TERMINA EL CONTENIDO PRINCIPAL -->
+    <!-- SECTION FOOTER -->
+    <footer class="footer">
+      <p class="copyright">&copy; 2019- Hello blue pale dot</p>
+      <i class="fab fa-spotify"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-facebook"></i>
+      <i class="fab fa-telegram"></i>
+    </footer>
+  </body>
+</html>

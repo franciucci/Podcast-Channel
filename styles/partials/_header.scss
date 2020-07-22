@@ -1,0 +1,80 @@
+/* Este partial contiene el estilo del header de la página */
+@import "variables";
+
+/* Estilos del menú de navegación */
+.navbar {
+  position: fixed;
+  width: 100vw;
+  height: 4em;
+  background-color: white;
+  z-index: 3;
+  .navlist {
+    list-style: none;
+    overflow: hidden;
+    background-color: $menu_color;
+    clear: both;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+    .navlinks a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      padding: 20px 50px 20px 20px;
+      &:hover {
+        background-color: #000eff;
+      }
+    }
+  }
+  .logo {
+    float: left;
+    display: block;
+    margin: 20px 30px;
+  }
+  /* A partir de aqui se crea el menú hamburguesa */
+  .menu-icon {
+    padding: 28px 20px;
+    position: relative;
+    float: right;
+    cursor: pointer;
+    .nav-icon {
+      background-color: #060a24;
+      display: block;
+      height: 2px;
+      width: 18px;
+      position: relative;
+      transition: background 0.2s ease-out;
+      &::before {
+        background-color: #060a24;
+        content: "";
+        display: block;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 5px;
+        transition: all 0.2s ease-out;
+      }
+      &::after {
+        @extend .nav-icon::before;
+        top: -5px;
+      }
+    }
+  }
+  /* Efecto al clickear en el menú hamburguesa */
+  .menu-btn {
+    display: none;
+    &:checked ~ .navlist {
+      max-height: 240px;
+    }
+    &:checked ~ .menu-icon .nav-icon {
+      background-color: transparent;
+      &::before {
+        transform: rotate(-45deg);
+        top: 0;
+      }
+      &::after {
+        transform: rotate(45deg);
+        top: 0;
+      }
+    }
+  }
+}

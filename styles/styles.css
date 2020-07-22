@@ -1,0 +1,170 @@
+@charset "UTF-8";
+/* Este partial contiene todas las variables que se van a utilizar en los demás partials */
+/* Colores */
+/* Fuentes */
+/* Tamaños */
+/* Este partial contiene los estilos generales que se van a utilizar a lo largo de toda la página */
+/* Este partial contiene todas las variables que se van a utilizar en los demás partials */
+/* Colores */
+/* Fuentes */
+/* Tamaños */
+/* Estilo aplicable a toda la página */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+/* Estilo del título del main header */
+h1 {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 64px;
+  color: #060a24;
+}
+
+/* Estilo de los títulos de las diferentes secciones */
+h2 {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 48px;
+  color: #060a24;
+}
+
+/* Estilo del texto general */
+body {
+  font-family: "IBM Plex Mono", monospace;
+  color: #060a24;
+  font-size: 16px;
+}
+
+/* Este partial contiene el estilo del header de la página */
+/* Este partial contiene todas las variables que se van a utilizar en los demás partials */
+/* Colores */
+/* Fuentes */
+/* Tamaños */
+/* Estilos del menú de navegación */
+.navbar {
+  position: fixed;
+  width: 100vw;
+  height: 4em;
+  background-color: white;
+  z-index: 3;
+  /* A partir de aqui se crea el menú hamburguesa */
+  /* Efecto al clickear en el menú hamburguesa */
+}
+
+.navbar .navlist {
+  list-style: none;
+  overflow: hidden;
+  background-color: #0000ec;
+  clear: both;
+  max-height: 0;
+  -webkit-transition: max-height 0.2s ease-out;
+  transition: max-height 0.2s ease-out;
+}
+
+.navbar .navlist .navlinks a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 20px 50px 20px 20px;
+}
+
+.navbar .navlist .navlinks a:hover {
+  background-color: #000eff;
+}
+
+.navbar .logo {
+  float: left;
+  display: block;
+  margin: 20px 30px;
+}
+
+.navbar .menu-icon {
+  padding: 28px 20px;
+  position: relative;
+  float: right;
+  cursor: pointer;
+}
+
+.navbar .menu-icon .nav-icon {
+  background-color: #060a24;
+  display: block;
+  height: 2px;
+  width: 18px;
+  position: relative;
+  -webkit-transition: background 0.2s ease-out;
+  transition: background 0.2s ease-out;
+}
+
+.navbar .menu-icon .nav-icon::before, .navbar .menu-icon .nav-icon::after {
+  background-color: #060a24;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 5px;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.navbar .menu-icon .nav-icon::after {
+  top: -5px;
+}
+
+.navbar .menu-btn {
+  display: none;
+}
+
+.navbar .menu-btn:checked ~ .navlist {
+  max-height: 240px;
+}
+
+.navbar .menu-btn:checked ~ .menu-icon .nav-icon {
+  background-color: transparent;
+}
+
+.navbar .menu-btn:checked ~ .menu-icon .nav-icon::before, .navbar .menu-btn:checked ~ .menu-icon .nav-icon::after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 0;
+}
+
+.navbar .menu-btn:checked ~ .menu-icon .nav-icon::after {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 0;
+}
+
+.main-header {
+  padding-top: 5em;
+}
+
+/* Este partial contiene los estilos para la versión desktop */
+/* Este partial contiene todas las variables que se van a utilizar en los demás partials */
+/* Colores */
+/* Fuentes */
+/* Tamaños */
+/* Navbar horizontal */
+@media (min-width: 48em) {
+  .navbar .navlist {
+    clear: none;
+    float: right;
+    margin-right: 80px;
+    max-height: none;
+    background-color: white;
+  }
+  .navbar .navlist .navlinks {
+    float: left;
+  }
+  .navbar .navlist .navlinks a {
+    padding: 20px 30px;
+    color: #060a24;
+  }
+  .navbar .menu-icon {
+    display: none;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
