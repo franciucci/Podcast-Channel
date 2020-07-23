@@ -14,6 +14,9 @@
       a {
         padding: 20px 30px;
         color: $text_color;
+        &:nth-child(1) {
+          padding-top: 20px;
+        }
       }
     }
   }

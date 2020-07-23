@@ -47,7 +47,7 @@ body {
 .navbar {
   position: fixed;
   width: 100vw;
-  height: 4em;
+  height: 80px;
   background-color: white;
   z-index: 3;
   /* A partir de aqui se crea el menú hamburguesa */
@@ -173,6 +173,9 @@ body {
   .navbar .navlist .navlinks a {
     padding: 20px 30px;
     color: #060a24;
+  }
+  .navbar .navlist .navlinks a:nth-child(1) {
+    padding-top: 20px;
   }
   .navbar .menu-icon {
     display: none;
