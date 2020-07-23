@@ -14,8 +14,44 @@ $title_font: "IBM Plex Sans", sans-serif;
 $text_font: "IBM Plex Mono", monospace;
 
 /* Tamaños */
-$maintitle_size: 64px;
+$maintitle_size_desk: 64px;
+$title_size_mobile: 36px;
 $titles_size: 48px;
-$buttontext_size: 18px;
+$buttontext_size_desk: 18px;
+$buttontext_size_mobile: 16px;
 $text_size: 16px;
+$text_size_mobile: 14px;
 $img_titles: 24px;
+
+/* Estilos de los botones versión mobile */
+%button_mobile {
+  color: $text_color;
+  font-size: $buttontext_size_mobile;
+  background-color: $button_color;
+  border: none;
+  height: 3.5rem;
+  width: 14.13rem;
+  font-weight: 500;
+}
+
+%button-hover {
+  color: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 240, 184, 1) 0%,
+    rgba(0, 0, 254, 1) 100%
+  );
+}
+
+/* Estilo de los títulos h1 y h2 de versión mobile */
+%titleh1_mobile {
+  font-family: $title_font;
+  font-size: $title_size_mobile;
+  color: $text_color;
+}
+
+%titleh2_mobile {
+  font-family: $title_font;
+  font-size: $title_size_mobile;
+  color: $text_color;
+}
