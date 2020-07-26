@@ -2,7 +2,7 @@
 @import "variables";
 
 /* Estilos del menú de navegación */
-.navbar {
+.header__nav {
   position: fixed;
   width: 100vw;
   height: 80px;
@@ -15,75 +15,75 @@
     clear: both;
     max-height: 0;
     transition: max-height 0.2s ease-out;
-    .navlinks a {
-      display: block;
-      color: rgb(255, 255, 255);
-      text-decoration: none;
-      padding: 0 15.1% 2.4% 1.1%;
-      line-height: 28px;
-      &:nth-child(1) {
-        padding-top: 1.1%;
-      }
-      &:hover {
-        color: $navlink_hover;
-        text-decoration: line-through;
-      }
-      &:active {
-        color: $navlink_active;
-        text-decoration: line-through;
-      }
-    }
   }
-  .logo {
-    float: left;
+  .navlist__navlinks a {
     display: block;
-    margin: 20px 30px;
-  }
-  /* A partir de aqui se crea el menú hamburguesa */
-  .menu-icon {
-    padding: 28px 20px;
-    position: relative;
-    float: right;
-    cursor: pointer;
-    .nav-icon {
-      background-color: #060a24;
-      display: block;
-      height: 2px;
-      width: 18px;
-      position: relative;
-      transition: background 0.2s ease-out;
-      &::before {
-        background-color: #060a24;
-        content: "";
-        display: block;
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        top: 5px;
-        transition: all 0.2s ease-out;
-      }
-      &::after {
-        @extend .nav-icon::before;
-        top: -5px;
-      }
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 0 15.1% 2.4% 1.1%;
+    line-height: 28px;
+    &:nth-child(1) {
+      padding-top: 1.1%;
+    }
+    &:hover {
+      color: $navlink_hover;
+      text-decoration: line-through;
+    }
+    &:active {
+      color: $navlink_active;
+      text-decoration: line-through;
     }
   }
-  /* Efecto al clickear en el menú hamburguesa */
-  .menu-btn {
-    display: none;
-    &:checked ~ .navlist {
-      max-height: 224px;
+}
+.header__logo {
+  float: left;
+  display: block;
+  margin: 20px 30px;
+}
+/* A partir de aqui se crea el menú hamburguesa */
+.header__menu-icon {
+  padding: 28px 20px;
+  position: relative;
+  float: right;
+  cursor: pointer;
+}
+.header__nav-icon {
+  background-color: #060a24;
+  display: block;
+  height: 2px;
+  width: 18px;
+  position: relative;
+  transition: background 0.2s ease-out;
+  &::before {
+    background-color: #060a24;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 5px;
+    transition: all 0.2s ease-out;
+  }
+  &::after {
+    @extend .header__nav-icon::before;
+    top: -5px;
+  }
+}
+/* Efecto al clickear en el menú hamburguesa */
+.header__menu-btn {
+  display: none;
+  &:checked ~ .navlist {
+    max-height: 224px;
+  }
+  &:checked ~ .header__menu-icon .header__nav-icon {
+    background-color: transparent;
+    &::before {
+      transform: rotate(-45deg);
+      top: 0;
     }
-    &:checked ~ .menu-icon .nav-icon {
-      background-color: transparent;
-      &::before {
-        transform: rotate(-45deg);
-        top: 0;
-      }
-      &::after {
-        transform: rotate(45deg);
-        top: 0;
-      }
+    &::after {
+      transform: rotate(45deg);
+      top: 0;
     }
   }
 }

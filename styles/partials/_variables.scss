@@ -13,15 +13,16 @@ $navlink_active: rgba(6, 10, 36, 0.56);
 $title_font: "IBM Plex Sans", sans-serif;
 $text_font: "IBM Plex Mono", monospace;
 
-/* Tamaños */
-$maintitle_size_desk: 64px;
+/* Tamaños de fuentes mobile*/
 $title_size_mobile: 36px;
-$titles_size: 48px;
-$buttontext_size_desk: 18px;
-$buttontext_size_mobile: 16px;
-$text_size: 16px;
 $text_size_mobile: 14px;
-$img_titles: 24px;
+$img_text: 24px;
+$buttontext_size_mobile: 16px;
+
+/* Tamaños de fuentes desktop */
+$title_size_desk: 48px;
+$text_size_desk: 16px;
+$buttontext_size_desk: 18px;
 
 /* Estilos de los botones versión mobile */
 %button_mobile {
@@ -29,8 +30,8 @@ $img_titles: 24px;
   font-size: $buttontext_size_mobile;
   background-color: $button_color;
   border: none;
-  height: 3.5rem;
-  width: 14.13rem;
+  height: 2rem;
+  width: 90%;
   font-weight: 500;
 }
 
@@ -44,13 +45,7 @@ $img_titles: 24px;
 }
 
 /* Estilo de los títulos h1 y h2 de versión mobile */
-%titleh1_mobile {
-  font-family: $title_font;
-  font-size: $title_size_mobile;
-  color: $text_color;
-}
-
-%titleh2_mobile {
+%title_mobile {
   font-family: $title_font;
   font-size: $title_size_mobile;
   color: $text_color;

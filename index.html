@@ -22,28 +22,30 @@
   </head>
   <body>
     <header class="header">
-      <nav class="navbar">
-        <a href="#main"
+      <nav class="header__nav">
+        <a href="#main" class="header__logo"
           ><img src="images/logo.svg" alt="podcast logo" class="logo"
         /></a>
         <!-- Esto es un checkbox para crear el menú hamburguesa -->
-        <input type="checkbox" class="menu-btn" id="menu-btn" />
+        <input type="checkbox" class="header__menu-btn" id="menu-btn" />
         <!-- Este label es para poder mostrar el menú al hacer clic sobre el icono del menu hamburguesa -->
-        <label for="menu-btn" class="menu-icon"
-          ><span class="nav-icon"></span
+        <label for="menu-btn" class="header__menu-icon"
+          ><span class="header__nav-icon"></span
         ></label>
         <ul class="navlist">
-          <li class="navlinks"><a href="#episodes">EPISODIOS</a></li>
-          <li class="navlinks"><a href="#history">NOSOTROS</a></li>
-          <li class="navlinks"><a href="#galery">ENTREVISTAS</a></li>
-          <li class="navlinks"><a href="#topics">TÓPICOS</a></li>
+          <li class="navlist__navlinks"><a href="#episodes">EPISODIOS</a></li>
+          <li class="navlist__navlinks"><a href="#us">NOSOTROS</a></li>
+          <li class="navlist__navlinks">
+            <a href="#interviews">ENTREVISTAS</a>
+          </li>
+          <li class="navlist__navlinks"><a href="#topics">TÓPICOS</a></li>
         </ul>
       </nav>
     </header>
     <!-- AQUI COMIENZA EL CONTENIDO PRINCIPAL -->
     <a href="" id="main"></a>
     <main class="main">
-      <section class="main-header">
+      <section class="hero">
         <h1>
           Hello <span class="world">world</span>
           <span class="pale">pale blue dot<span class="dot">.</span></span>
@@ -60,38 +62,46 @@
       <a href="" id="episodes"></a>
       <section class="episodes">
         <h2>Episodios</h2>
-        <iframe
-          src="https://open.spotify.com/embed-podcast/episode/7AZZy2nJ4R9ZndHW0h2yxt"
-          width="100%"
-          height="232"
-          frameborder="0"
-          allowtransparency="true"
-          allow="encrypted-media"
-        ></iframe>
-        <iframe
-          src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt"
-          width="100%"
-          height="232"
-          frameborder="0"
-          allowtransparency="true"
-          allow="encrypted-media"
-        ></iframe>
-        <iframe
-          src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD"
-          width="100%"
-          height="232"
-          frameborder="0"
-          allowtransparency="true"
-          allow="encrypted-media"
-        ></iframe>
-        <iframe
-          src="https://open.spotify.com/embed-podcast/episode/31VyAQAwBiKoHVoYUCEzjQ"
-          width="100%"
-          height="232"
-          frameborder="0"
-          allowtransparency="true"
-          allow="encrypted-media"
-        ></iframe>
+        <article>
+          <iframe
+            src="https://open.spotify.com/embed-podcast/episode/7AZZy2nJ4R9ZndHW0h2yxt"
+            width="100%"
+            height="232"
+            frameborder="0"
+            allowtransparency="true"
+            allow="encrypted-media"
+          ></iframe>
+        </article>
+        <article>
+          <iframe
+            src="https://open.spotify.com/embed-podcast/episode/1ezdL2ivAGLwSE6Xbssxqt"
+            width="100%"
+            height="232"
+            frameborder="0"
+            allowtransparency="true"
+            allow="encrypted-media"
+          ></iframe>
+        </article>
+        <article>
+          <iframe
+            src="https://open.spotify.com/embed-podcast/episode/3cWta1iiQSfvrdHaCbLkSD"
+            width="100%"
+            height="232"
+            frameborder="0"
+            allowtransparency="true"
+            allow="encrypted-media"
+          ></iframe>
+        </article>
+        <article>
+          <iframe
+            src="https://open.spotify.com/embed-podcast/episode/31VyAQAwBiKoHVoYUCEzjQ"
+            width="100%"
+            height="232"
+            frameborder="0"
+            allowtransparency="true"
+            allow="encrypted-media"
+          ></iframe>
+        </article>
         <div>
           <img src="images/phone.png" alt="phone-image" />
         </div>

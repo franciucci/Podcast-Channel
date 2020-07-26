@@ -2,14 +2,14 @@
 @import "variables";
 
 /* Navbar horizontal */
-@media (min-width: 736px) {
-  .navbar .navlist {
+@media screen and (min-width: 736px) {
+  .header__nav .navlist {
     clear: none;
     float: right;
     margin-right: 80px;
     max-height: none;
     background-color: white;
-    .navlinks {
+    .navlist__navlinks {
       float: left;
       a {
         padding: 20px 30px;
@@ -17,15 +17,19 @@
         &:nth-child(1) {
           padding-top: 20px;
         }
+        &:hover {
+          color: $navlink_hover;
+          text-decoration: line-through;
+        }
       }
     }
   }
-  .navbar .menu-icon {
+  .header__menu-icon {
     display: none;
   }
   /* Main-header */
   .main-header h1 {
-    font-size: $maintitle_size_desk;
+    font-size: 64px;
     .pale {
       display: inline;
     }
@@ -34,7 +38,7 @@
     }
   }
   .main-header p {
-    font-size: $text_size;
+    font-size: $text_size_desk;
     width: 43%;
   }
   .main-header .form .button {
