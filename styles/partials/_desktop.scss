@@ -1,50 +1,23 @@
 /* Este partial contiene los estilos para la versión desktop */
 @import "variables";
-
-/* Navbar horizontal */
-@media screen and (min-width: 736px) {
-  .header__nav .navlist {
-    clear: none;
-    float: right;
-    margin-right: 80px;
-    max-height: none;
-    background-color: white;
-    .navlist__navlinks {
-      float: left;
-      a {
-        padding: 20px 30px;
-        color: $text_color;
-        &:nth-child(1) {
-          padding-top: 20px;
-        }
-        &:hover {
-          color: $navlink_hover;
-          text-decoration: line-through;
-        }
+@media screen and (min-width: 991px) {
+  /* ******LOGO DEL NAVBAR******* */
+  .header__logo {
+    margin-left: 10%;
+  }
+  /* ******HERO****** */
+  .hero {
+    margin-left: 15%;
+    &__title {
+      margin-top: 120px;
+      font-size: 64px;
+      line-height: normal;
+      .secondline {
+        display: inline;
+      }
+      .dot {
+        color: #0000ec;
       }
     }
-  }
-  .header__menu-icon {
-    display: none;
-  }
-  /* Main-header */
-  .main-header h1 {
-    font-size: 64px;
-    .pale {
-      display: inline;
-    }
-    .dot {
-      color: #0000ec;
-    }
-  }
-  .main-header p {
-    font-size: $text_size_desk;
-    width: 43%;
-  }
-  .main-header .form .button {
-    flex-grow: 0;
-  }
-  .main-header {
-    padding-left: 60px;
   }
 }

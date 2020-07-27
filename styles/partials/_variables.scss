@@ -29,10 +29,10 @@ $buttontext_size_desk: 18px;
   color: $text_color;
   font-size: $buttontext_size_mobile;
   background-color: $button_color;
-  border: none;
-  height: 2rem;
-  width: 90%;
-  font-weight: 500;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
 }
 
 %button-hover {

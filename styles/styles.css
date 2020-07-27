@@ -9,10 +9,10 @@
   color: #060a24;
   font-size: 16px;
   background-color: #00f3bb;
-  border: none;
-  height: 2rem;
-  width: 90%;
-  font-weight: 500;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
 }
 
 .button:hover {
@@ -22,7 +22,7 @@
 }
 
 /* Estilo de los títulos h1 y h2 de versión mobile */
-h1 {
+.hero__title {
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 36px;
   color: #060a24;
@@ -39,10 +39,10 @@ h1 {
   color: #060a24;
   font-size: 16px;
   background-color: #00f3bb;
-  border: none;
-  height: 2rem;
-  width: 90%;
-  font-weight: 500;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
 }
 
 .button:hover {
@@ -52,7 +52,7 @@ h1 {
 }
 
 /* Estilo de los títulos h1 y h2 de versión mobile */
-h1 {
+.hero__title {
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 36px;
   color: #060a24;
@@ -66,14 +66,6 @@ h1 {
   padding: 0;
   scroll-behavior: smooth;
   font-size: 16px;
-}
-
-/* Estilo del título del main header versión mobile */
-/* Estilo de los títulos de las diferentes secciones */
-h2 {
-  font-family: "IBM Plex Sans", sans-serif;
-  font-size: 36px;
-  color: #060a24;
 }
 
 /* Estilo del texto general versión mobile */
@@ -95,10 +87,10 @@ body {
   color: #060a24;
   font-size: 16px;
   background-color: #00f3bb;
-  border: none;
-  height: 2rem;
-  width: 90%;
-  font-weight: 500;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
 }
 
 .button:hover {
@@ -108,7 +100,7 @@ body {
 }
 
 /* Estilo de los títulos h1 y h2 de versión mobile */
-h1 {
+.hero__title {
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 36px;
   color: #060a24;
@@ -158,6 +150,7 @@ h1 {
 .header__logo {
   float: left;
   display: block;
+  font-size: 24px;
   margin: 20px 30px;
 }
 
@@ -220,45 +213,6 @@ h1 {
   top: 0;
 }
 
-.main-header {
-  padding-top: 5em;
-}
-
-.main-header h1 {
-  margin: 10px 5px;
-  padding: 10px;
-}
-
-.main-header h1 .world {
-  text-decoration: line-through;
-}
-
-.main-header h1 .pale {
-  display: block;
-}
-
-.main-header p {
-  margin: 10px 5px 30px;
-  padding: 10px;
-  text-align: justify;
-}
-
-.main-header .form {
-  margin: 15px 5px;
-  padding: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.main-header .form .button {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  font-weight: 500;
-}
-
-/* Este partial contiene los estilos para la versión desktop */
 /* Este partial contiene todas las variables que se van a utilizar en los demás partials */
 /* Colores */
 /* Fuentes */
@@ -269,10 +223,10 @@ h1 {
   color: #060a24;
   font-size: 16px;
   background-color: #00f3bb;
-  border: none;
-  height: 2rem;
-  width: 90%;
-  font-weight: 500;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
 }
 
 .button:hover {
@@ -282,14 +236,83 @@ h1 {
 }
 
 /* Estilo de los títulos h1 y h2 de versión mobile */
-h1 {
+.hero__title {
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 36px;
   color: #060a24;
 }
 
-/* Navbar horizontal */
-@media screen and (min-width: 736px) {
+/* Este partial le da estilo a la sección "Hero" */
+.main {
+  padding-top: 90px;
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+}
+
+.hero__title {
+  line-height: 42px;
+}
+
+.hero__title .firstline {
+  text-decoration: line-through;
+}
+
+.hero__title .secondline {
+  display: block;
+}
+
+.hero__text {
+  margin: 5px 0;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: justify;
+}
+
+.button {
+  margin-top: 20px;
+}
+
+/* En este partial se definen los estilos entre 480px y 736px y mayor a 736px */
+/* Este partial contiene todas las variables que se van a utilizar en los demás partials */
+/* Colores */
+/* Fuentes */
+/* Tamaños de fuentes mobile*/
+/* Tamaños de fuentes desktop */
+/* Estilos de los botones versión mobile */
+.button {
+  color: #060a24;
+  font-size: 16px;
+  background-color: #00f3bb;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.button:hover {
+  color: white;
+  background: -webkit-gradient(linear, left top, right top, from(#00f0b8), to(#0000fe));
+  background: linear-gradient(90deg, #00f0b8 0%, #0000fe 100%);
+}
+
+/* Estilo de los títulos h1 y h2 de versión mobile */
+.hero__title {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 36px;
+  color: #060a24;
+}
+
+@media screen and (min-width: 768px) {
+  /* *****NAVBAR****** */
   .header__nav .navlist {
     clear: none;
     float: right;
@@ -314,29 +337,71 @@ h1 {
   .header__menu-icon {
     display: none;
   }
-  /* Main-header */
-  .main-header h1 {
-    font-size: 64px;
-  }
-  .main-header h1 .pale {
-    display: inline;
-  }
-  .main-header h1 .dot {
-    color: #0000ec;
-  }
-  .main-header p {
+}
+
+@media screen and (min-width: 599px) {
+  /* ************HERO************ */
+  .hero__text {
     font-size: 16px;
     width: 43%;
   }
-  .main-header .form .button {
-    -webkit-box-flex: 0;
-        -ms-flex-positive: 0;
-            flex-grow: 0;
+  .button {
+    width: 20%;
   }
-  .main-header {
-    padding-left: 60px;
+  .button__text {
+    font-size: 18px;
   }
 }
 
-/* En este partial se definen los estilos entre 480px y 736px y mayor a 736px */
+/* Este partial contiene los estilos para la versión desktop */
+/* Este partial contiene todas las variables que se van a utilizar en los demás partials */
+/* Colores */
+/* Fuentes */
+/* Tamaños de fuentes mobile*/
+/* Tamaños de fuentes desktop */
+/* Estilos de los botones versión mobile */
+.button {
+  color: #060a24;
+  font-size: 16px;
+  background-color: #00f3bb;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.button:hover {
+  color: white;
+  background: -webkit-gradient(linear, left top, right top, from(#00f0b8), to(#0000fe));
+  background: linear-gradient(90deg, #00f0b8 0%, #0000fe 100%);
+}
+
+/* Estilo de los títulos h1 y h2 de versión mobile */
+.hero__title {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 36px;
+  color: #060a24;
+}
+
+@media screen and (min-width: 991px) {
+  /* ******LOGO DEL NAVBAR******* */
+  .header__logo {
+    margin-left: 10%;
+  }
+  /* ******HERO****** */
+  .hero {
+    margin-left: 15%;
+  }
+  .hero__title {
+    margin-top: 120px;
+    font-size: 64px;
+    line-height: normal;
+  }
+  .hero__title .secondline {
+    display: inline;
+  }
+  .hero__title .dot {
+    color: #0000ec;
+  }
+}
 /*# sourceMappingURL=styles.css.map */

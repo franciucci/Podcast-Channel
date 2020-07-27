@@ -10,16 +10,6 @@
   font-size: 16px;
 }
 
-/* Estilo del título del main header versión mobile */
-h1 {
-  @extend %title_mobile;
-}
-/* Estilo de los títulos de las diferentes secciones */
-h2 {
-  font-family: $title_font;
-  font-size: $title_size_mobile;
-  color: $text_color;
-}
 /* Estilo del texto general versión mobile */
 body {
   font-family: $text_font;

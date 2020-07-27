@@ -1,27 +1,29 @@
-.main-header {
-  padding-top: 5em;
-  h1 {
-    margin: 10px 5px;
-    padding: 10px;
-    .world {
+@import "variables";
+/* Este partial le da estilo a la sección "Hero" */
+.main {
+  padding-top: 90px;
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  &__title {
+    @extend %title_mobile;
+    line-height: 42px;
+    .firstline {
       text-decoration: line-through;
     }
-    .pale {
+    .secondline {
       display: block;
     }
   }
-  p {
-    margin: 10px 5px 30px;
-    padding: 10px;
+  &__text {
+    margin: 5px 0;
+    font-size: $text_size_mobile;
+    line-height: 22px;
     text-align: justify;
   }
-  .form {
-    margin: 15px 5px;
-    padding: 10px;
-    display: flex;
-    .button {
-      flex-grow: 1;
-      font-weight: 500;
-    }
-  }
+}
+.button {
+  margin-top: 20px;
 }

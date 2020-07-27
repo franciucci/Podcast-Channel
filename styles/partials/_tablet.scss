@@ -1,1 +1,43 @@
 /* En este partial se definen los estilos entre 480px y 736px y mayor a 736px */
+@import "variables";
+
+@media screen and (min-width: 768px) {
+  /* *****NAVBAR****** */
+  .header__nav .navlist {
+    clear: none;
+    float: right;
+    margin-right: 80px;
+    max-height: none;
+    background-color: white;
+    .navlist__navlinks {
+      float: left;
+      a {
+        padding: 20px 30px;
+        color: $text_color;
+        &:nth-child(1) {
+          padding-top: 20px;
+        }
+        &:hover {
+          color: $navlink_hover;
+          text-decoration: line-through;
+        }
+      }
+    }
+  }
+  .header__menu-icon {
+    display: none;
+  }
+}
+@media screen and (min-width: 599px) {
+  /* ************HERO************ */
+  .hero__text {
+    font-size: $text_size_desk;
+    width: 43%;
+  }
+  .button {
+    width: 20%;
+    &__text {
+      font-size: $buttontext_size_desk;
+    }
+  }
+}
