@@ -1,0 +1,24 @@
+@import "variables";
+/* Este partial da estilo a la sección "News" del HTML */
+.news {
+  background-image: linear-gradient(
+    225deg,
+    $background_1 0%,
+    $background_2 100%
+  );
+  clip-path: polygon(0 13%, 100% 0, 100% 100%, 0 100%);
+  padding: 4rem 1rem 4.19rem;
+  .button {
+    display: block;
+    margin: auto;
+  }
+  &__title {
+    font-family: $title_font;
+    font-size: $title_size_mobile;
+    color: #fff;
+    font-weight: 300;
+    text-align: center;
+    line-height: 2.625rem;
+    margin-bottom: 2.25rem;
+  }
+}

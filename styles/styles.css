@@ -529,6 +529,58 @@ body {
   text-align: center;
 }
 
+/* Este partial contiene todas las variables que se van a utilizar en los demás partials */
+/* Colores */
+/* Fuentes */
+/* Tamaños de fuentes mobile*/
+/* Tamaños de fuentes desktop */
+/* Estilos de los botones versión mobile */
+.button {
+  color: #060a24;
+  font-size: 1rem;
+  background-color: #00f3bb;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  padding: 0.625rem;
+}
+
+.button:hover {
+  color: white;
+  background: -webkit-gradient(linear, left top, right top, from(#00f0b8), to(#0000fe));
+  background: linear-gradient(90deg, #00f0b8 0%, #0000fe 100%);
+}
+
+/* Estilo de los títulos h1 y h2 de versión mobile */
+.hero__title {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 2.25rem;
+  color: #060a24;
+}
+
+/* Este partial da estilo a la sección "News" del HTML */
+.news {
+  background-image: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
+  -webkit-clip-path: polygon(0 13%, 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 13%, 100% 0, 100% 100%, 0 100%);
+  padding: 4rem 1rem 4.19rem;
+}
+
+.news .button {
+  display: block;
+  margin: auto;
+}
+
+.news__title {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 2.25rem;
+  color: #fff;
+  font-weight: 300;
+  text-align: center;
+  line-height: 2.625rem;
+  margin-bottom: 2.25rem;
+}
+
 /* En este partial se definen los estilos entre 599px y 736px y mayores*/
 /* Este partial contiene todas las variables que se van a utilizar en los demás partials */
 /* Colores */
@@ -613,6 +665,10 @@ body {
         grid-template-columns: repeat(2, 1fr);
     -ms-grid-rows: (1fr)[2];
         grid-template-rows: repeat(2, 1fr);
+  }
+  /* ***** NEWS ***** */
+  .button--news {
+    width: 19rem;
   }
 }
 
@@ -780,5 +836,17 @@ body {
     -ms-grid-rows: 1fr;
         grid-template-rows: 1fr;
   }
+  /* ****** NEWS ****** */
+  .news .news__title {
+    font-size: 3rem;
+  }
+  .news {
+    -webkit-clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
+    padding: 13.31rem 23.38rem 9.44rem;
+  }
+  /*  .button--news {
+    width: 80%;
+  } */
 }
 /*# sourceMappingURL=styles.css.map */
