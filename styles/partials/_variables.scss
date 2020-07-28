@@ -14,15 +14,15 @@ $title_font: "IBM Plex Sans", sans-serif;
 $text_font: "IBM Plex Mono", monospace;
 
 /* Tamaños de fuentes mobile*/
-$title_size_mobile: 36px;
-$text_size_mobile: 14px;
-$img_text: 24px;
-$buttontext_size_mobile: 16px;
+$title_size_mobile: 2.25rem;
+$text_size_mobile: 0.875rem;
+$img_text: 1.5rem;
+$buttontext_size_mobile: 1rem;
 
 /* Tamaños de fuentes desktop */
-$title_size_desk: 48px;
-$text_size_desk: 16px;
-$buttontext_size_desk: 18px;
+$title_size_desk: 3rem;
+$text_size_desk: 1rem;
+$buttontext_size_desk: 1.125rem;
 
 /* Estilos de los botones versión mobile */
 %button_mobile {
@@ -32,7 +32,7 @@ $buttontext_size_desk: 18px;
   font-weight: 600;
   text-align: center;
   text-decoration: none;
-  padding: 10px;
+  padding: 0.625rem;
 }
 
 %button-hover {

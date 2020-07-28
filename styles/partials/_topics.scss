@@ -1,0 +1,31 @@
+@import "variables";
+/* Este partial le da estilo a la sección "Topics" del HTML */
+.topics {
+  margin: 3rem 1rem 2.63rem;
+  &__title {
+    padding-bottom: 2.3rem;
+    font-family: $title_font;
+    font-size: $title_size_mobile;
+    color: $text_color;
+  }
+  .topic-container {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    justify-content: center;
+    grid-row-gap: 3.06rem;
+    .topic-box {
+      display: flex;
+      flex-flow: column nowrap;
+      &__img {
+        margin-bottom: 0.81rem;
+      }
+      &__text {
+        font-family: $text_font;
+        font-size: $img_text;
+        font-weight: 600;
+        color: $text_color;
+        text-align: center;
+      }
+    }
+  }
+}

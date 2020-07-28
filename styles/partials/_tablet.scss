@@ -1,4 +1,4 @@
-/* En este partial se definen los estilos entre 480px y 736px y mayor a 736px */
+/* En este partial se definen los estilos entre 599px y 736px y mayores*/
 @import "variables";
 @media screen and (min-width: 599px) {
   /* ************HERO************ */
@@ -36,6 +36,11 @@
   .img-container {
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(2, 50%);
+  }
+  /* ****** TOPICS ******* */
+  .topics .topic-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
   }
 }
 @media screen and (min-width: 768px) {
