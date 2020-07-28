@@ -20,4 +20,13 @@
       }
     }
   }
+  /* ******* EPISODES ******** */
+  .episodes {
+    clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
+    padding-top: 11.63rem;
+    padding-bottom: 14.54rem;
+    &__title {
+      margin-left: 12.5rem;
+    }
+  }
 }
