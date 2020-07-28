@@ -27,6 +27,21 @@
     padding-bottom: 14.54rem;
     &__title {
       margin-left: 12.5rem;
+      font-size: $title_size_desk;
+    }
+  }
+  /* ******* US ******** */
+  .us {
+    .float {
+      transform: translateY(-10.54rem);
+    }
+    .text-container__title {
+      margin-top: 1.28rem;
+      margin-bottom: 1.5rem;
+      font-size: $title_size_desk;
+    }
+    .text-container__text {
+      font-size: $text_size_desk;
     }
   }
 }

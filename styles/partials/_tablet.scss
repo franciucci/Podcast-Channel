@@ -41,6 +41,17 @@
       padding: 2.25rem;
     }
   }
+  /* ******** US ********* */
+  .us {
+    .float__img {
+      width: 28.6rem;
+      height: 41.25rem;
+    }
+    .text-container {
+      flex-basis: 40%;
+      margin-left: 3.9rem;
+    }
+  }
 }
 
 @media screen and (min-width: 599px) {
@@ -53,6 +64,24 @@
     width: 20%;
     &__text {
       font-size: $buttontext_size_desk;
+    }
+  }
+  /* ******** US ********* */
+  .us {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    .float__img {
+      width: 21.875rem;
+      height: 41.25rem;
+    }
+    .text-container {
+      align-self: flex-start;
+      flex-basis: 30%;
+      margin-left: 2rem;
+      &__title {
+        margin-top: 1.28rem;
+      }
     }
   }
 }

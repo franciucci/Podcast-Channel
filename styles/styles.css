@@ -317,6 +317,7 @@ body {
   -webkit-clip-path: polygon(0 3%, 100% 0, 100% 97%, 0 100%);
           clip-path: polygon(0 3%, 100% 0, 100% 97%, 0 100%);
   padding: 4rem 0.69rem;
+  padding-bottom: 8.97rem;
 }
 
 .episodes__title {
@@ -330,6 +331,108 @@ body {
 
 .episodes .episode-box {
   width: 100%;
+}
+
+/* Este partial contiene todas las variables que se van a utilizar en los demás partials */
+/* Colores */
+/* Fuentes */
+/* Tamaños de fuentes mobile*/
+/* Tamaños de fuentes desktop */
+/* Estilos de los botones versión mobile */
+.button {
+  color: #060a24;
+  font-size: 16px;
+  background-color: #00f3bb;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.button:hover {
+  color: white;
+  background: -webkit-gradient(linear, left top, right top, from(#00f0b8), to(#0000fe));
+  background: linear-gradient(90deg, #00f0b8 0%, #0000fe 100%);
+}
+
+/* Estilo de los títulos h1 y h2 de versión mobile */
+.hero__title {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 36px;
+  color: #060a24;
+}
+
+/* Este partial le da estilo a la sección "US" del HTML */
+.us {
+  margin: 0 1rem;
+  margin-bottom: 3.38rem;
+}
+
+.us .float {
+  -webkit-transform: translateY(-5.97rem);
+          transform: translateY(-5.97rem);
+  text-align: center;
+}
+
+.us .float__img {
+  width: 80vw;
+}
+
+.us .text-container__title {
+  margin-top: -4.28rem;
+  margin-bottom: 0.5rem;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 36px;
+  line-height: 42px;
+}
+
+.us .text-container__title .span {
+  margin-top: 0.1px;
+  display: block;
+}
+
+.us .text-container__text {
+  font-family: "IBM Plex Mono", monospace;
+  color: #060a24;
+  font-size: 14px;
+  line-height: 1.375rem;
+}
+
+.us .first_text {
+  margin-bottom: 0.8125rem;
+}
+
+/* Este partial contiene todas las variables que se van a utilizar en los demás partials */
+/* Colores */
+/* Fuentes */
+/* Tamaños de fuentes mobile*/
+/* Tamaños de fuentes desktop */
+/* Estilos de los botones versión mobile */
+.button {
+  color: #060a24;
+  font-size: 16px;
+  background-color: #00f3bb;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.button:hover {
+  color: white;
+  background: -webkit-gradient(linear, left top, right top, from(#00f0b8), to(#0000fe));
+  background: linear-gradient(90deg, #00f0b8 0%, #0000fe 100%);
+}
+
+/* Estilo de los títulos h1 y h2 de versión mobile */
+.hero__title {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 36px;
+  color: #060a24;
+}
+
+.image-galer__img {
+  width: 100vw;
 }
 
 /* En este partial se definen los estilos entre 480px y 736px y mayor a 736px */
@@ -411,6 +514,16 @@ body {
     width: 50%;
     padding: 2.25rem;
   }
+  /* ******** US ********* */
+  .us .float__img {
+    width: 28.6rem;
+    height: 41.25rem;
+  }
+  .us .text-container {
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+    margin-left: 3.9rem;
+  }
 }
 
 @media screen and (min-width: 599px) {
@@ -424,6 +537,33 @@ body {
   }
   .button__text {
     font-size: 18px;
+  }
+  /* ******** US ********* */
+  .us {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .us .float__img {
+    width: 21.875rem;
+    height: 41.25rem;
+  }
+  .us .text-container {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+    margin-left: 2rem;
+  }
+  .us .text-container__title {
+    margin-top: 1.28rem;
   }
 }
 
@@ -486,6 +626,20 @@ body {
   }
   .episodes__title {
     margin-left: 12.5rem;
+    font-size: 48px;
+  }
+  /* ******* US ******** */
+  .us .float {
+    -webkit-transform: translateY(-10.54rem);
+            transform: translateY(-10.54rem);
+  }
+  .us .text-container__title {
+    margin-top: 1.28rem;
+    margin-bottom: 1.5rem;
+    font-size: 48px;
+  }
+  .us .text-container__text {
+    font-size: 16px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
