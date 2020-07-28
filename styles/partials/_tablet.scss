@@ -98,4 +98,20 @@
       margin-left: 3.9rem;
     }
   }
+  /* ***** FOOTER ***** */
+  .footer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 2.25rem 1.75rem 1.94rem 6.25rem;
+    &__text {
+      font-size: $text_size_desk;
+    }
+    .social {
+      display: inline-block;
+      &__icon {
+        margin: 0 2.25rem;
+      }
+    }
+  }
 }

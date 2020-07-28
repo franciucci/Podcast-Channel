@@ -13,6 +13,7 @@
   text-align: center;
   text-decoration: none;
   padding: 0.625rem;
+  cursor: pointer;
 }
 
 .button:hover {
@@ -43,6 +44,7 @@
   text-align: center;
   text-decoration: none;
   padding: 0.625rem;
+  cursor: pointer;
 }
 
 .button:hover {
@@ -91,6 +93,7 @@ body {
   text-align: center;
   text-decoration: none;
   padding: 0.625rem;
+  cursor: pointer;
 }
 
 .button:hover {
@@ -227,6 +230,7 @@ body {
   text-align: center;
   text-decoration: none;
   padding: 0.625rem;
+  cursor: pointer;
 }
 
 .button:hover {
@@ -279,7 +283,6 @@ body {
 
 .button {
   margin-top: 20px;
-  cursor: pointer;
 }
 
 /* Este partial contiene todas las variables que se van a utilizar en los demás partials */
@@ -296,6 +299,7 @@ body {
   text-align: center;
   text-decoration: none;
   padding: 0.625rem;
+  cursor: pointer;
 }
 
 .button:hover {
@@ -347,6 +351,7 @@ body {
   text-align: center;
   text-decoration: none;
   padding: 0.625rem;
+  cursor: pointer;
 }
 
 .button:hover {
@@ -417,6 +422,7 @@ body {
   text-align: center;
   text-decoration: none;
   padding: 0.625rem;
+  cursor: pointer;
 }
 
 .button:hover {
@@ -469,6 +475,7 @@ body {
   text-align: center;
   text-decoration: none;
   padding: 0.625rem;
+  cursor: pointer;
 }
 
 .button:hover {
@@ -543,6 +550,7 @@ body {
   text-align: center;
   text-decoration: none;
   padding: 0.625rem;
+  cursor: pointer;
 }
 
 .button:hover {
@@ -581,6 +589,69 @@ body {
   margin-bottom: 2.25rem;
 }
 
+/* Este partial contiene todas las variables que se van a utilizar en los demás partials */
+/* Colores */
+/* Fuentes */
+/* Tamaños de fuentes mobile*/
+/* Tamaños de fuentes desktop */
+/* Estilos de los botones versión mobile */
+.button {
+  color: #060a24;
+  font-size: 1rem;
+  background-color: #00f3bb;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  padding: 0.625rem;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: white;
+  background: -webkit-gradient(linear, left top, right top, from(#00f0b8), to(#0000fe));
+  background: linear-gradient(90deg, #00f0b8 0%, #0000fe 100%);
+}
+
+/* Estilo de los títulos h1 y h2 de versión mobile */
+.hero__title {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 2.25rem;
+  color: #060a24;
+}
+
+/* Este partial le da estilo al "Footer" */
+.footer {
+  padding: 1.5rem 2.94rem 1.94rem;
+  /*   display: flex;
+  flex-flow: column nowrap;
+  align-items: center; */
+}
+
+.footer__text {
+  margin-bottom: 1rem;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.875rem;
+  color: #060a24;
+  line-height: 1.375rem;
+  text-align: center;
+}
+
+.footer .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.footer .social__link {
+  color: #060a24;
+}
+
 /* En este partial se definen los estilos entre 599px y 736px y mayores*/
 /* Este partial contiene todas las variables que se van a utilizar en los demás partials */
 /* Colores */
@@ -596,6 +667,7 @@ body {
   text-align: center;
   text-decoration: none;
   padding: 0.625rem;
+  cursor: pointer;
 }
 
 .button:hover {
@@ -731,6 +803,29 @@ body {
         flex-basis: 40%;
     margin-left: 3.9rem;
   }
+  /* ***** FOOTER ***** */
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 2.25rem 1.75rem 1.94rem 6.25rem;
+  }
+  .footer__text {
+    font-size: 1rem;
+  }
+  .footer .social {
+    display: inline-block;
+  }
+  .footer .social__icon {
+    margin: 0 2.25rem;
+  }
 }
 
 /* Este partial contiene los estilos para la versión desktop */
@@ -748,6 +843,7 @@ body {
   text-align: center;
   text-decoration: none;
   padding: 0.625rem;
+  cursor: pointer;
 }
 
 .button:hover {
@@ -845,8 +941,5 @@ body {
             clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
     padding: 13.31rem 23.38rem 9.44rem;
   }
-  /*  .button--news {
-    width: 80%;
-  } */
 }
 /*# sourceMappingURL=styles.css.map */
