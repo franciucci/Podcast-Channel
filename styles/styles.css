@@ -431,8 +431,27 @@ body {
   color: #060a24;
 }
 
-.image-galer__img {
-  width: 100vw;
+/* Este partial le da estilo a la sección "Galery" del HTML */
+.galery__title {
+  margin: 0 1rem 0.88rem;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 36px;
+  color: #060a24;
+  line-height: 2.625rem;
+}
+
+.img-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[6];
+      grid-template-rows: repeat(6, 1fr);
+  -ms-grid-columns: 100vw;
+      grid-template-columns: 100vw;
+}
+
+.img-container__img {
+  width: 100%;
+  height: 15.19rem;
 }
 
 /* En este partial se definen los estilos entre 480px y 736px y mayor a 736px */
@@ -463,6 +482,56 @@ body {
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 36px;
   color: #060a24;
+}
+
+@media screen and (min-width: 599px) {
+  /* ************HERO************ */
+  .hero__text {
+    font-size: 16px;
+    width: 43%;
+  }
+  .button {
+    width: 20%;
+  }
+  .button__text {
+    font-size: 18px;
+  }
+  /* ******** US ********* */
+  .us {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 0;
+  }
+  .us .float__img {
+    width: 21.875rem;
+    height: 41.25rem;
+  }
+  .us .text-container {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+    margin-left: 2rem;
+  }
+  .us .text-container__title {
+    margin-top: 1.28rem;
+    margin-bottom: 1.28rem;
+  }
+  /* ******* GALERY ******* */
+  .img-container {
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+    -ms-grid-columns: (50%)[2];
+        grid-template-columns: repeat(2, 50%);
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -523,47 +592,6 @@ body {
     -ms-flex-preferred-size: 40%;
         flex-basis: 40%;
     margin-left: 3.9rem;
-  }
-}
-
-@media screen and (min-width: 599px) {
-  /* ************HERO************ */
-  .hero__text {
-    font-size: 16px;
-    width: 43%;
-  }
-  .button {
-    width: 20%;
-  }
-  .button__text {
-    font-size: 18px;
-  }
-  /* ******** US ********* */
-  .us {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row nowrap;
-            flex-flow: row nowrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .us .float__img {
-    width: 21.875rem;
-    height: 41.25rem;
-  }
-  .us .text-container {
-    -ms-flex-item-align: start;
-        align-self: flex-start;
-    -ms-flex-preferred-size: 30%;
-        flex-basis: 30%;
-    margin-left: 2rem;
-  }
-  .us .text-container__title {
-    margin-top: 1.28rem;
   }
 }
 
@@ -629,6 +657,9 @@ body {
     font-size: 48px;
   }
   /* ******* US ******** */
+  .us {
+    margin-bottom: 0;
+  }
   .us .float {
     -webkit-transform: translateY(-10.54rem);
             transform: translateY(-10.54rem);
@@ -640,6 +671,20 @@ body {
   }
   .us .text-container__text {
     font-size: 16px;
+  }
+  /* ******* GALERY ******* */
+  .galery__title {
+    margin-left: 12.5rem;
+    margin-bottom: 2.25rem;
+  }
+  .img-container {
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  .img-container__img {
+    height: 22.75rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */

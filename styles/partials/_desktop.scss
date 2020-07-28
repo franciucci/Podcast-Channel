@@ -32,6 +32,7 @@
   }
   /* ******* US ******** */
   .us {
+    margin-bottom: 0;
     .float {
       transform: translateY(-10.54rem);
     }
@@ -42,6 +43,18 @@
     }
     .text-container__text {
       font-size: $text_size_desk;
+    }
+  }
+  /* ******* GALERY ******* */
+  .galery__title {
+    margin-left: 12.5rem;
+    margin-bottom: 2.25rem;
+  }
+  .img-container {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    &__img {
+      height: 22.75rem;
     }
   }
 }
