@@ -116,6 +116,7 @@ body {
   height: 80px;
   background-color: white;
   z-index: 3;
+  padding: 5px;
 }
 
 .header__nav .navlist {
@@ -642,8 +643,8 @@ body {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
