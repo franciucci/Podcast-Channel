@@ -2,9 +2,9 @@
 /* Este partial le da estilo al "Footer" */
 .footer {
   padding: 1.5rem 2.94rem 1.94rem;
-  /*   display: flex;
+  display: flex;
   flex-flow: column nowrap;
-  align-items: center; */
+  align-items: center;
   &__text {
     margin-bottom: 1rem;
     font-family: $text_font;
@@ -13,12 +13,16 @@
     line-height: 1.375rem;
     text-align: center;
   }
-  .social {
+  .social__link {
+    padding: 0 15px;
+    color: $text_color;
+  }
+  /*   .social {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: center;
     &__link {
       color: $text_color;
+      padding: 0 15px;
     }
-  }
+  } */
 }

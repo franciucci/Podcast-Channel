@@ -10,6 +10,7 @@
   &__title {
     @extend %title_mobile;
     line-height: 42px;
+    font-weight: normal;
     .firstline {
       text-decoration: line-through;
     }

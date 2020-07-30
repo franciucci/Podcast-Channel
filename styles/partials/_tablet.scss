@@ -18,6 +18,9 @@
     flex-flow: row nowrap;
     justify-content: center;
     margin-bottom: 0;
+    &__link {
+      top: -60px;
+    }
     .float__img {
       width: 21.875rem;
       height: 41.25rem;
@@ -106,12 +109,10 @@
     padding: 2.25rem 1.75rem 1.94rem 6.25rem;
     &__text {
       font-size: $text_size_desk;
+      margin-bottom: 0;
     }
     .social {
-      display: inline-block;
-      &__icon {
-        margin: 0 2.25rem;
-      }
+      margin-right: 6.25rem;
     }
   }
 }

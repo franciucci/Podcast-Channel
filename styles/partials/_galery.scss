@@ -4,10 +4,14 @@
   margin: 0 1rem 0.88rem;
   font-family: $title_font;
   font-size: $title_size_mobile;
+  font-weight: 400;
   color: $text_color;
   line-height: 2.625rem;
 }
-
+.galery__link {
+  position: relative;
+  top: -80px;
+}
 .img-container {
   display: grid;
   grid-template-rows: repeat(6, 1fr);

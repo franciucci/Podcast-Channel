@@ -1,12 +1,25 @@
+/* HOJA DE ESTILOS PRINCIPAL DONDE IMPORTA TODOS LOS PARTIALS */
+/* IMPORTA LAS VARIABLES QUE SE UTILIZAN EN EL RESTO DE LOS PARTIALS */
 @import "partials/variables";
+/* IMPORTA ALGUNOS ESTILOS BASES DE ELEMENTOS QUE SE REPITEN EN LA PÁGINA */
 @import "partials/base_rules";
+/* ESTILOS DEL HEADER QUE CONTIENE LA BARRA DE NAVEGACIÓN */
 @import "partials/header";
+/* ESTILOS DEL HERO DE LA PÁGINA */
 @import "partials/hero";
+/* ESTILO DE LA SECCIÓN EPISODES */
 @import "partials/episodes";
+/* ESTILO DE LA SECCIÓN US */
 @import "partials/us";
+/* ESTILO DE LA SECCIÓN GALERY (GALERIA DE IMAGENES) */
 @import "partials/galery";
+/* ESTILO DE LA SECCIÓN TOPICS */
 @import "partials/topics";
+/* ESTILO DE LA SECCIÓN NEWS */
 @import "partials/news";
+/* ESTILO DEL FOOTER */
 @import "partials/footer";
+/* PARTIAL CON MEDIA QUERIES CON RESOLUCIONES PARA TABLET */
 @import "partials/tablet";
+/* PARTIAL CON MEDIA QUERIES CON RESOLUCIONES PARA DESKTOP */
 @import "partials/desktop";

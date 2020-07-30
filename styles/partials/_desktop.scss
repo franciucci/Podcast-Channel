@@ -33,6 +33,9 @@
   /* ******* US ******** */
   .us {
     margin-bottom: 0;
+    &__link {
+      top: -250px;
+    }
     .float {
       transform: translateY(-10.54rem);
     }
@@ -40,9 +43,12 @@
       margin-top: 1.28rem;
       margin-bottom: 1.5rem;
       font-size: $title_size_desk;
-    }
-    .text-container__text {
-      font-size: $text_size_desk;
+      &__text {
+        font-size: $text_size_desk;
+      }
+      .span {
+        display: inline;
+      }
     }
   }
   /* ******* GALERY ******* */

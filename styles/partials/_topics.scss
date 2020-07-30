@@ -6,7 +6,12 @@
     padding-bottom: 2.3rem;
     font-family: $title_font;
     font-size: $title_size_mobile;
+    font-weight: 400;
     color: $text_color;
+  }
+  &__link {
+    position: relative;
+    top: -80px;
   }
   .topic-container {
     display: grid;

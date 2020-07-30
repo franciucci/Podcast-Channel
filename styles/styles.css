@@ -1,4 +1,6 @@
 @charset "UTF-8";
+/* HOJA DE ESTILOS PRINCIPAL DONDE IMPORTA TODOS LOS PARTIALS */
+/* IMPORTA LAS VARIABLES QUE SE UTILIZAN EN EL RESTO DE LOS PARTIALS */
 /* Este partial contiene todas las variables que se van a utilizar en los demás partials */
 /* Colores */
 /* Fuentes */
@@ -29,6 +31,7 @@
   color: #060a24;
 }
 
+/* IMPORTA ALGUNOS ESTILOS BASES DE ELEMENTOS QUE SE REPITEN EN LA PÁGINA */
 /* Este partial contiene los estilos generales que se van a utilizar a lo largo de toda la página */
 /* Este partial contiene todas las variables que se van a utilizar en los demás partials */
 /* Colores */
@@ -78,6 +81,7 @@ body {
 }
 
 /* Estilos de los buttons */
+/* ESTILOS DEL HEADER QUE CONTIENE LA BARRA DE NAVEGACIÓN */
 /* Este partial contiene el estilo del header de la página */
 /* Este partial contiene todas las variables que se van a utilizar en los demás partials */
 /* Colores */
@@ -217,6 +221,7 @@ body {
   top: 0;
 }
 
+/* ESTILOS DEL HERO DE LA PÁGINA */
 /* Este partial contiene todas las variables que se van a utilizar en los demás partials */
 /* Colores */
 /* Fuentes */
@@ -265,6 +270,7 @@ body {
 
 .hero__title {
   line-height: 42px;
+  font-weight: normal;
 }
 
 .hero__title .firstline {
@@ -286,6 +292,7 @@ body {
   margin-top: 20px;
 }
 
+/* ESTILO DE LA SECCIÓN EPISODES */
 /* Este partial contiene todas las variables que se van a utilizar en los demás partials */
 /* Colores */
 /* Fuentes */
@@ -325,6 +332,11 @@ body {
   padding-bottom: 8.97rem;
 }
 
+.episodes__link {
+  position: relative;
+  top: -100px;
+}
+
 .episodes__title {
   padding-left: 1rem;
   margin-bottom: 1.31rem;
@@ -338,6 +350,12 @@ body {
   width: 100%;
 }
 
+.episodes .episode-box__iframe {
+  border: none;
+  width: 100%;
+}
+
+/* ESTILO DE LA SECCIÓN US */
 /* Este partial contiene todas las variables que se van a utilizar en los demás partials */
 /* Colores */
 /* Fuentes */
@@ -374,6 +392,11 @@ body {
   margin-bottom: 3.38rem;
 }
 
+.us__link {
+  position: relative;
+  top: 80px;
+}
+
 .us .float {
   -webkit-transform: translateY(-5.97rem);
           transform: translateY(-5.97rem);
@@ -389,6 +412,7 @@ body {
   margin-bottom: 0.5rem;
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 2.25rem;
+  font-weight: 400;
   color: #060a24;
   line-height: 2.625rem;
 }
@@ -398,7 +422,7 @@ body {
   display: block;
 }
 
-.us .text-container__text {
+.us .text-container__title__text {
   font-family: "IBM Plex Mono", monospace;
   color: #060a24;
   font-size: 0.875rem;
@@ -409,6 +433,7 @@ body {
   margin-bottom: 0.8125rem;
 }
 
+/* ESTILO DE LA SECCIÓN GALERY (GALERIA DE IMAGENES) */
 /* Este partial contiene todas las variables que se van a utilizar en los demás partials */
 /* Colores */
 /* Fuentes */
@@ -444,8 +469,14 @@ body {
   margin: 0 1rem 0.88rem;
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 2.25rem;
+  font-weight: 400;
   color: #060a24;
   line-height: 2.625rem;
+}
+
+.galery__link {
+  position: relative;
+  top: -80px;
 }
 
 .img-container {
@@ -462,6 +493,7 @@ body {
   height: 15.19rem;
 }
 
+/* ESTILO DE LA SECCIÓN TOPICS */
 /* Este partial contiene todas las variables que se van a utilizar en los demás partials */
 /* Colores */
 /* Fuentes */
@@ -501,7 +533,13 @@ body {
   padding-bottom: 2.3rem;
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 2.25rem;
+  font-weight: 400;
   color: #060a24;
+}
+
+.topics__link {
+  position: relative;
+  top: -80px;
 }
 
 .topics .topic-container {
@@ -537,6 +575,7 @@ body {
   text-align: center;
 }
 
+/* ESTILO DE LA SECCIÓN NEWS */
 /* Este partial contiene todas las variables que se van a utilizar en los demás partials */
 /* Colores */
 /* Fuentes */
@@ -583,6 +622,7 @@ body {
 .news__title {
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 2.25rem;
+  font-weight: 400;
   color: #fff;
   font-weight: 300;
   text-align: center;
@@ -590,6 +630,7 @@ body {
   margin-bottom: 2.25rem;
 }
 
+/* ESTILO DEL FOOTER */
 /* Este partial contiene todas las variables que se van a utilizar en los demás partials */
 /* Colores */
 /* Fuentes */
@@ -623,9 +664,24 @@ body {
 /* Este partial le da estilo al "Footer" */
 .footer {
   padding: 1.5rem 2.94rem 1.94rem;
-  /*   display: flex;
-  flex-flow: column nowrap;
-  align-items: center; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /*   .social {
+    display: flex;
+    justify-content: center;
+    &__link {
+      color: $text_color;
+      padding: 0 15px;
+    }
+  } */
 }
 
 .footer__text {
@@ -637,22 +693,12 @@ body {
   text-align: center;
 }
 
-.footer .social {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
 .footer .social__link {
+  padding: 0 15px;
   color: #060a24;
 }
 
+/* PARTIAL CON MEDIA QUERIES CON RESOLUCIONES PARA TABLET */
 /* En este partial se definen los estilos entre 599px y 736px y mayores*/
 /* Este partial contiene todas las variables que se van a utilizar en los demás partials */
 /* Colores */
@@ -709,6 +755,9 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
     margin-bottom: 0;
+  }
+  .us__link {
+    top: -60px;
   }
   .us .float__img {
     width: 21.875rem;
@@ -820,15 +869,14 @@ body {
   }
   .footer__text {
     font-size: 1rem;
+    margin-bottom: 0;
   }
   .footer .social {
-    display: inline-block;
-  }
-  .footer .social__icon {
-    margin: 0 2.25rem;
+    margin-right: 6.25rem;
   }
 }
 
+/* PARTIAL CON MEDIA QUERIES CON RESOLUCIONES PARA DESKTOP */
 /* Este partial contiene los estilos para la versión desktop */
 /* Este partial contiene todas las variables que se van a utilizar en los demás partials */
 /* Colores */
@@ -895,6 +943,9 @@ body {
   .us {
     margin-bottom: 0;
   }
+  .us__link {
+    top: -250px;
+  }
   .us .float {
     -webkit-transform: translateY(-10.54rem);
             transform: translateY(-10.54rem);
@@ -904,8 +955,11 @@ body {
     margin-bottom: 1.5rem;
     font-size: 3rem;
   }
-  .us .text-container__text {
+  .us .text-container__title__text {
     font-size: 1rem;
+  }
+  .us .text-container__title .span {
+    display: inline;
   }
   /* ******* GALERY ******* */
   .galery__title {
